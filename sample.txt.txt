@@ -1,3 +1,28 @@
-"Hello World"
-sample coding for Tokyo
-This is sample
+print "Hello World"
+print "Integer Float String"*10
+for n in range(97, 123):
+  print chr(n)
+
+str = 'abcdefghilklmn'
+for s in str:
+  v = ord(s)
+  print v
+
+import binascii
+
+b1 = '\x01\x02\x03\x04\x01\x02\x03\x04'
+s = binascii.b2a_hex(b1)
+print s
+b2 = binascii.a2b_hex(s)
+if b1 == b2:
+  print 'correct'
+~
+
+import StringIO
+
+f = stringIO.StringIO()
+for n in range(4):
+  f.write(str(n) + '\n')
+
+f.seek(0)
+print f.read()
