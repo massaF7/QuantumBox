@@ -26,3 +26,5 @@ for n in range(4):
 
 f.seek(0)
 print f.read()
+
+print “I am Haru.”
